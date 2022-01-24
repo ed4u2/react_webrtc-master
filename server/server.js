@@ -11,9 +11,9 @@ server.listen(process.env.PORT || 8000);
 
 
 
-server.listen(port, ip, () =>{
-	console.log(`Server is running at https://${ip}:${port}`);
-});
+//server.listen(port, ip, () =>{
+//	console.log(`Server is running at https://${ip}:${port}`);
+//});
 
 io.on('connection', function (socket) {
     socket.on('join', function (data) {
