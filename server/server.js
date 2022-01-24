@@ -2,10 +2,10 @@ var app = require('express')();
 var server = require('https').Server(app);
 var io = require('socket.io')(server);
 
-//server.listen(process.env.PORT || 8000);
+server.listen(process.env.PORT || 8000);
 
-const port = 8000;
-const ip = "140.138.152.130";
+//const port = 8000;
+//const ip = "140.138.152.130";
 
 
 
