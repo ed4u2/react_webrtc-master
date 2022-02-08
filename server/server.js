@@ -1,19 +1,8 @@
 var app = require('express')();
-var server = require('https').Server(app);
+var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
 server.listen(process.env.PORT || 8000);
-
-//const port = 8000;
-//const ip = "140.138.152.130";
-
-
-
-
-
-//server.listen(port, ip, () =>{
-//	console.log(`Server is running at https://${ip}:${port}`);
-//});
 
 io.on('connection', function (socket) {
     socket.on('join', function (data) {
